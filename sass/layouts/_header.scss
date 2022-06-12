@@ -35,11 +35,10 @@
 &:focus {
     color: var(--accent-cl);
     }
-}
 
 &--current {
     color: var(--accent-cl);
-}
+    }
 
 &--current::after {
     content: '';
@@ -51,8 +50,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    }
 }
-
 .contacts__list {
     margin-left: auto;
     display: flex;
