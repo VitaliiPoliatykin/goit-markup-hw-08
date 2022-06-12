@@ -33,11 +33,9 @@ body {
   color: var(--main-txt-cl);
 }
 
-@media screen and (max-width: 1199.98px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -99,5 +97,127 @@ img {
 .link {
   text-decoration: none;
   color: currentColor;
+}
+
+.advantages {
+  padding-bottom: 30px;
+}
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767.98px) {
+  .advantages__list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    margin-right: 30px;
+  }
+  .advantages__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .advantages__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+.advantages__frame {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages__frame {
+    width: 450px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__frame {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__frame {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 0px;
+  }
+}
+
+.advantages__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .advantages__title {
+    text-align: center;
+  }
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages__description {
+    max-width: 450px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__description {
+    max-width: 354px;
+    max-height: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__description {
+    max-width: 270px;
+    max-height: 75px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
