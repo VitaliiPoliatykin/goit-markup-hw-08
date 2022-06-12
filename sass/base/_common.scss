@@ -1,9 +1,15 @@
 body {
-    font-family: var(--main-font);
-    background-color: var(--main-bg-cl);
-    color: var(--main-txt-cl);
+  font-family: var(--main-font);
+  background-color: var(--main-bg-cl);
+  color: var(--main-txt-cl);
 }
 .section {
+  @include mg(not-desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include mg(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 }
