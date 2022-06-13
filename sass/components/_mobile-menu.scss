@@ -1,0 +1,36 @@
+.mobile__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--main-bg-cl);
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+.mobile__container.is-open {
+  transform: translateX(0);
+}
+.mobile__btn {
+  cursor: pointer;
+  border-style: none;
+  background-color: transparent;
+  padding: 0;
+
+  &--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+.mobile__btn-icon {
+  fill: currentColor;
+  transition: var(--hov-focus);
+  &:hover,
+  &:focus {
+    fill: var(--accent-cl);
+  }
+}
