@@ -149,8 +149,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--main-bg-cl);
   z-index: 100;
@@ -189,7 +189,7 @@ img {
 }
 
 .mobile-navigation__link--current {
-  color: #2196f3;
+  color: var(--accent-cl);
 }
 
 .mobile-navigation__link:hover, .mobile-navigation__link:focus {
@@ -214,7 +214,7 @@ img {
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-cl);
 }
 
 .mobile-contacts__link--grey {
@@ -249,7 +249,7 @@ img {
 }
 
 .mobile-social__link {
-  color: #2196f3;
+  color: var(--accent-cl);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -260,23 +260,31 @@ img {
   cursor: pointer;
   border-style: none;
   background-color: transparent;
-  padding: 0;
+  padding: 16px 0px;
+  margin-left: auto;
+  -webkit-transition: var(--hov-focus);
+  transition: var(--hov-focus);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__btn {
+    display: none;
+  }
 }
 
 .mobile__btn--close {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 0px;
+}
+
+.mobile__btn:hover, .mobile__btn:focus {
+  color: var(--accent-cl);
 }
 
 .mobile__btn-icon {
   fill: currentColor;
-  -webkit-transition: var(--hov-focus);
-  transition: var(--hov-focus);
-}
-
-.mobile__btn-icon:hover, .mobile__btn-icon:focus {
-  fill: var(--accent-cl);
 }
 
 .header {

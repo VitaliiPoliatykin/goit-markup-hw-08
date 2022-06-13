@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--main-bg-cl);
   z-index: 100;
@@ -30,7 +30,7 @@
   transition: var(--hov-focus);
 
   &--current {
-    color: #2196f3;
+    color: var(--accent-cl);
   }
 
   &:hover,
@@ -53,7 +53,7 @@
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-cl);
 
   &--grey {
     font-size: 24px;
@@ -77,7 +77,7 @@
   }
 }
 .mobile-social__link {
-  color: #2196f3;
+  color: var(--accent-cl);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -87,20 +87,27 @@
   cursor: pointer;
   border-style: none;
   background-color: transparent;
-  padding: 0;
+  padding: 16px 0px;
+  margin-left: auto;
+
+  @include mg(tablet) {
+    display: none;
+  }
 
   &--close {
     position: absolute;
     top: 10px;
     right: 15px;
+    padding: 0px;
+  }
+
+  transition: var(--hov-focus);
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
   }
 }
 
 .mobile__btn-icon {
   fill: currentColor;
-  transition: var(--hov-focus);
-  &:hover,
-  &:focus {
-    fill: var(--accent-cl);
-  }
 }
