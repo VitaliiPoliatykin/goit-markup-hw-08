@@ -1,82 +1,81 @@
 .subscribe {
-    text-align: center;
+  text-align: center;
 
-    @include mg(desktop) {
-        margin-left: auto;
-    }
-
+  @include mg(desktop) {
+    margin-left: auto;
+  }
 }
 
 .subscribe__title {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-txt-cl);
-    margin-bottom: 20px;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-txt-cl);
+  margin-bottom: 20px;
 }
 
 .subscribe__form {
-    display: block;
+  display: block;
 
-    @include mg(desktop) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-.subscribe__email {
-    width: 450px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    outline: transparent;
-    padding: 15px 16px;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-
-    padding: 15px 16px;
-
-    margin-bottom: 20px;
-
-    @include mg(desktop) {
-        width: 358px;
-        margin-bottom: 0px;
-        margin-right: 12px;
-    }
-}
-
-.subscribe__btn {
-    background-color: var(--accent-cl);
-    width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 10px 29px;
-
+  @include mg(desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+  }
+}
 
-    &:hover,
-    &:focus {
-        background-color: #188ce8;
-    }
+.subscribe__email {
+  width: 450px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: transparent;
+  padding: 15px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  padding: 15px 16px;
+
+  margin-bottom: 20px;
+
+  @include mg(desktop) {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+.subscribe__btn {
+  background-color: var(--accent-cl);
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 29px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .subscribe__title-btn {
-    color: var(--secondary-txt-cl);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    margin-right: 10px;
+  color: var(--secondary-txt-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  margin-right: 10px;
 }
