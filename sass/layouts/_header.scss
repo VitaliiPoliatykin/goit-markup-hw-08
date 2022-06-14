@@ -56,13 +56,12 @@
 .contacts__list {
   display: flex;
   align-items: center;
-  margin-left: 305px;
+  margin-left: auto;
 
   @include mg(tablet-only) {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 84px;
   }
 }
 
@@ -93,6 +92,13 @@
   display: flex;
   align-items: center;
   transition: color var(--hov-focus);
+
+  &--tel {
+    padding-bottom: 20px;
+  }
+  &--mail {
+    padding-top: 20px;
+  }
 
   @include mg(desktop) {
     font-size: 14px;

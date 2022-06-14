@@ -51,6 +51,10 @@
   letter-spacing: 0.03em;
   transition: color var(--hov-focus);
 
+  &--map {
+    color: var(--secondary-txt-cl);
+  }
+
   &:hover,
   &:focus {
     color: var(--accent-cl);
