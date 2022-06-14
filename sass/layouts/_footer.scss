@@ -9,11 +9,8 @@
     @include mg(tablet) {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    @include mg(desktop) {
-      display: flex;
       align-items: baseline;
+      justify-content: center;
     }
   }
 }
@@ -22,8 +19,12 @@
   text-align: center;
   margin-bottom: 60px;
 
+  @include mg(tablet-only) {
+    margin-right: 165px;
+  }
   @include mg(desktop) {
     margin-right: 70px;
+    margin-bottom: 0px;
   }
 }
 
