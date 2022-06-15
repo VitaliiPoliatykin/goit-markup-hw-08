@@ -143,6 +143,7 @@
 
 .mobile__menu {
   display: flex;
+  width: 100%;
 
   @include mg(mobile-only) {
     display: none;
