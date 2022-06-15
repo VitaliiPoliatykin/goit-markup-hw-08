@@ -1,15 +1,18 @@
 .advantages {
   padding-bottom: 30px;
+  @include mg(desktop) {
+    padding-bottom: 0px;
+  }
 }
 
 .advantages__list {
-  @include mg(mobile-only) {
-    display: block;
-  }
+  display: block;
 
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  @include mg(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .advantages__item {
@@ -22,6 +25,9 @@
   @include mg(tablet-only) {
     &:nth-child(2n) {
       margin-right: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
 }
@@ -84,5 +90,6 @@
   @include mg(desktop) {
     max-width: 270px;
     max-height: 75px;
+    margin-bottom: 0px;
   }
 }
