@@ -70,3 +70,14 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.project__img {
+  @include mg(tablet) {
+    width: 354px;
+    height: 294px;
+  }
+  @include mg(desktop) {
+    width: 370px;
+    height: 294px;
+  }
+}
