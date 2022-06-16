@@ -320,17 +320,41 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0px;
+  }
 }
 
 .filter__item:last-child {
@@ -1271,16 +1295,32 @@ img {
 }
 
 .projects__item {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.projects__item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .projects__item {
+    margin-right: 30px;
+  }
+  .projects__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .projects__item:last-child {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
 }
 
-.projects__item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    margin-right: 30px;
+  }
+  .projects__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .projects__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .project__link {
@@ -1316,7 +1356,7 @@ img {
   color: var(--secondary-txt-cl);
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   -webkit-transition: opacity var(--hov-focus), -webkit-transform var(--hov-focus);
@@ -1324,6 +1364,18 @@ img {
   transition: transform var(--hov-focus), opacity var(--hov-focus);
   transition: transform var(--hov-focus), opacity var(--hov-focus), -webkit-transform var(--hov-focus);
   opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .project__description {
+    padding: 49px 24px 77px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__description {
+    padding: 63px 24px;
+  }
 }
 
 .project__exposition {
