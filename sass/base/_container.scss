@@ -5,6 +5,8 @@
   margin-left: auto;
   margin-right: auto;
 
+  width: 100%;
+
   // mobile from 480px
   @include mg(mobile) {
     width: 480px;

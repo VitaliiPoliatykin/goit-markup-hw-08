@@ -50,6 +50,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   outline: 1px dotted red;
 }
 
@@ -247,7 +248,7 @@ img {
 }
 
 .subscribe__email {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -261,6 +262,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__email {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -699,8 +706,6 @@ img {
 }
 
 .hero__title {
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -708,9 +713,16 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
-  width: 360px;
-  height: 84px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    height: 84px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
