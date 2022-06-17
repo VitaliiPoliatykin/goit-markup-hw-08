@@ -720,6 +720,7 @@ img {
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  overflow-y: auto;
 }
 
 .mobile__container.is-open {
