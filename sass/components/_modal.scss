@@ -20,13 +20,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 93%;
-  height: 70%;
+  height: 90%;
   max-width: 450px;
   max-height: 609px;
   top: 50%;
   left: 50%;
   transition: transform 1000ms, opacity 300ms;
   padding: 40px;
+  overflow-y: auto;
 
   @include mg(tablet) {
     width: 100%;
@@ -81,18 +82,16 @@
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   margin-bottom: 12px;
-}
-.modal-form {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
 
+  @include mg(desktop) {
+    line-height: 1.15;
+  }
+}
 .modal-form-area {
   display: flex;
   flex-direction: column;
@@ -180,6 +179,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .modal-policy-group {
