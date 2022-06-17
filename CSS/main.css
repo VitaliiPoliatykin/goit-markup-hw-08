@@ -1034,7 +1034,8 @@ img {
   max-height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
