@@ -252,8 +252,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -541,6 +541,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: auto;
+    text-align: start;
   }
 }
 
@@ -1228,7 +1229,6 @@ img {
   .advantages__frame {
     width: 270px;
     height: 120px;
-    margin-bottom: 0px;
   }
 }
 
@@ -1470,6 +1470,7 @@ img {
 
 .clients__item {
   margin: 15px;
+  height: 92px;
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
       flex-basis: calc((100% - 60px) / 2);
 }
@@ -1559,6 +1560,7 @@ img {
   .address {
     margin-right: 70px;
     margin-bottom: 0px;
+    text-align: start;
   }
 }
 
