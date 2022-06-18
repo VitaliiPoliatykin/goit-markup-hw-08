@@ -9,6 +9,9 @@
     letter-spacing: 0.03em;
 
     margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
 
     @include mg(desktop) {
       font-size: 36px;
