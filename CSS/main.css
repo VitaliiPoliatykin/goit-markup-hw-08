@@ -253,7 +253,9 @@ img {
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
     width: 528px;
+    max-width: 100%;
     height: 581px;
+    max-height: 100%;
   }
 }
 
@@ -413,6 +415,12 @@ img {
   cursor: pointer;
   -webkit-transition: border-color var(--hov-focus);
   transition: border-color var(--hov-focus);
+}
+
+@media screen and (min-width: 1200px) {
+  .comment-area {
+    width: 448px;
+  }
 }
 
 .comment-area:hover, .comment-area:focus {

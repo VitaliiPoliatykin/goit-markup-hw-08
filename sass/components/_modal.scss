@@ -36,7 +36,9 @@
 
   @include mg(desktop) {
     width: 528px;
+    max-width: 100%;
     height: 581px;
+    max-height: 100%;
   }
 }
 
@@ -168,6 +170,9 @@
   color: var(--main-txt-cl);
   cursor: pointer;
   transition: border-color var(--hov-focus);
+  @include mg(desktop) {
+    width: 448px;
+  }
 
   &:hover,
   &:focus {
